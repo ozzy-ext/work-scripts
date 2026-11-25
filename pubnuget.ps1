@@ -4,7 +4,7 @@ param(
     [Parameter(Position = 0)]
     [string]$Version,
 
-    [Parameter(Position = 1)]
+    [Parameter(Position = 1, ValueFromRemainingArguments = $true)]
     [string[]]$Project,
 
     [string]$Suffix,
